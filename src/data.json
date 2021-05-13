@@ -1,0 +1,243 @@
+{
+  "machines": [
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": false,
+      "productType": "COFFEE_MACHINE_SMALL",
+      "sku": "CM001 – small machine, base model"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": false,
+      "productType": "COFFEE_MACHINE_SMALL",
+      "sku": "CM002 – small machine, premium model"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": true,
+      "productType": "COFFEE_MACHINE_SMALL",
+      "sku": "CM003 – small machine, deluxe model, water line compatible"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": false,
+      "productType": "COFFEE_MACHINE_LARGE",
+      "sku": "CM101 – large machine, base model"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": true,
+      "productType": "COFFEE_MACHINE_LARGE",
+      "sku": "CM102 – large machine, premium model, water line compatible"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": true,
+      "productType": "COFFEE_MACHINE_LARGE",
+      "sku": "CM103 – large machine, deluxe model, water line compatible"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": false,
+      "productType": "ESPRESSO_MACHINE",
+      "sku": "EM001 – espresso machine, base model"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": false,
+      "productType": "ESPRESSO_MACHINE",
+      "sku": "EM002 – espresso machine, premium model"
+    },
+    {
+      "PK": "MACHINES",
+      "lineWaterCompatible": true,
+      "productType": "ESPRESSO_MACHINE",
+      "sku": "EM003 – espresso machine, deluxe model, water line compatible"
+    }
+  ],
+
+  "pods": [
+    {
+      "PK": "PODS",
+      "sku": "CP001 – small coffee pod, 1 dozen, vanilla",
+      "packSize": 12,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_VANILLA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP003 – small coffee pod, 3 dozen, vanilla",
+      "packSize": 36,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_VANILLA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP011 – small coffee pod, 1 dozen, caramel",
+      "packSize": 12,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_CARAMEL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP013 – small coffee pod, 3 dozen, caramel",
+      "packSize": 36,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_CARAMEL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP021 – small coffee pod, 1 dozen, psl",
+      "packSize": 12,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_PSL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP023 – small coffee pod, 3 dozen, psl",
+      "packSize": 36,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_PSL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP031 – small coffee pod, 1 dozen, mocha",
+      "packSize": 12,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_MOCHA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP033 – small coffee pod, 3 dozen, mocha",
+      "packSize": 36,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_MOCHA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP041 – small coffee pod, 1 dozen, hazelnut",
+      "packSize": 12,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_HAZELNUT"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP043 – small coffee pod, 3 dozen, hazelnut",
+      "packSize": 36,
+      "productType": "COFFEE_POD_SMALL",
+      "coffeeFlavor": "COFFEE_FLAVOR_HAZELNUT"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP101 – large coffee pod, 1 dozen, vanilla",
+      "packSize": 12,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_VANILLA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP103 – large coffee pod, 3 dozen, vanilla",
+      "packSize": 36,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_VANILLA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP111 – large coffee pod, 1 dozen, caramel",
+      "packSize": 12,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_CARAMEL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP113 – large coffee pod, 3 dozen, caramel",
+      "packSize": 36,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_CARAMEL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP121 – large coffee pod, 1 dozen, psl",
+      "packSize": 12,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_PSL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP123 – large coffee pod, 3 dozen, psl",
+      "packSize": 36,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_PSL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP131 – large coffee pod, 1 dozen, mocha",
+      "packSize": 12,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_MOCHA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP133 – large coffee pod, 3 dozen, mocha",
+      "packSize": 36,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_MOCHA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP141 – large coffee pod, 1 dozen, hazelnut",
+      "packSize": 12,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_HAZELNUT"
+    },
+    {
+      "PK": "PODS",
+      "sku": "CP143 – large coffee pod, 3 dozen, hazelnut",
+      "packSize": 36,
+      "productType": "COFFEE_POD_LARGE",
+      "coffeeFlavor": "COFFEE_FLAVOR_HAZELNUT"
+    },
+    {
+      "PK": "PODS",
+      "sku": "EP003 – espresso pod, 3 dozen, vanilla",
+      "packSize": 36,
+      "productType": "ESPRESSO_POD",
+      "coffeeFlavor": "COFFEE_FLAVOR_VANILLA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "EP005 – espresso pod, 5 dozen, vanilla",
+      "packSize": 60,
+      "productType": "ESPRESSO_POD",
+      "coffeeFlavor": "COFFEE_FLAVOR_VANILLA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "EP007 – espresso pod, 7 dozen, vanilla",
+      "packSize": 84,
+      "productType": "ESPRESSO_POD",
+      "coffeeFlavor": "COFFEE_FLAVOR_VANILLA"
+    },
+    {
+      "PK": "PODS",
+      "sku": "EP013 – espresso pod, 3 dozen, caramel",
+      "packSize": 36,
+      "productType": "ESPRESSO_POD",
+      "coffeeFlavor": "COFFEE_FLAVOR_CARAMEL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "EP015 – espresso pod, 5 dozen, caramel",
+      "packSize": 60,
+      "productType": "ESPRESSO_POD",
+      "coffeeFlavor": "COFFEE_FLAVOR_CARAMEL"
+    },
+    {
+      "PK": "PODS",
+      "sku": "EP017 – espresso pod, 7 dozen, caramel",
+      "packSize": 84,
+      "productType": "ESPRESSO_POD",
+      "coffeeFlavor": "COFFEE_FLAVOR_CARAMEL"
+    }
+  ]
+}

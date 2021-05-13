@@ -1,0 +1,119 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: swenson-pro
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+  # you can overwrite defaults here
+  stage: dev
+  region: eu-central-1
+
+  environment:
+    SERVICE: ${self:service}
+    STAGE: ${self:provider.stage}
+    PRODUCTS_TABLE: ${self:service}-${self:provider.stage}-products
+    SERVICE_REGION: ${self:provider.region}
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:DeleteItem
+        - dynamodb:UpdateItem
+      Resource: "*"
+
+package:
+  individually: true
+  exclude:
+    - ./**
+
+functions:
+  seeder:
+    handler: src/controllers/seeder.handler
+    events:
+      - http:
+          path: seeder
+          method: GET
+          cors: true
+    package:
+      include:
+        - node_modules/uuid/**
+        - node_modules/date-fns/**
+        # - node_modules/date-fns/format/**
+        # - node_modules/date-fns/isValid/**
+        # - node_modules/date-fns/toDate/**
+        # - node_modules/date-fns/_lib/requiredArgs/**
+        - src/models/pod.js
+        - src/models/machine.js
+        - src/utils/date-fns.js
+        - src/utils/dynamodb.js
+        - src/data.json
+        - src/controllers/seeder.js
+  machines-index:
+    handler: src/controllers/machines/index.handler
+    events:
+      - http:
+          path: machines
+          method: GET
+          cors: true
+    package:
+      include:
+        # - node_modules/lodash/**
+        - src/models/machine.js
+        - src/utils/dynamodb.js
+        - src/controllers/machines/index.js
+  pods-index:
+    handler: src/controllers/pods/index.handler
+    events:
+      - http:
+          path: pods
+          method: GET
+          cors: true
+    package:
+      include:
+        # - node_modules/lodash/**
+        - src/utils/dynamodb.js
+        - src/models/pod.js
+        - src/controllers/pods/index.js
+
+# you can add CloudFormation resource templates here
+resources:
+  Resources:
+    productsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:service}-${self:provider.stage}-products
+        AttributeDefinitions:
+          - AttributeName: PK
+            AttributeType: S
+          - AttributeName: SK
+            AttributeType: S
+        KeySchema:
+          - AttributeName: PK
+            KeyType: HASH
+          - AttributeName: SK
+            KeyType: RANGE
+        BillingMode: PAY_PER_REQUEST
